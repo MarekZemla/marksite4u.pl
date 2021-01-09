@@ -4,11 +4,34 @@
   box-sizing: border-box;
 }
 
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
+
+div .welcome {
+  font-family: roboto;
+  max-width: 80%;
+  margin: 20px auto;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+
+.cursor {
+  opacity: 0;
+  transition: .2s;
+}
+
+
+.cursor.active {
+  opacity: 1;
+}
+
+/* .active {
+  opacity: 0;
+} */
 
 body {
   max-width: 1920px;
@@ -63,19 +86,24 @@ div h2 {
   line-height: 150%;
 }
 
-header button {
+button {
+  display: none;
   font-family: 'Saira',
     sans-serif;
   margin-top: 3vh;
   padding: 10px 20px;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 20px;
   text-transform: uppercase;
   color: white;
   background-color: transparent;
   border: 2px solid white;
   transition: 0.3s;
 }
+
+/* .show {
+  display: block;
+} */
 
 header button:hover {
   cursor: pointer;
