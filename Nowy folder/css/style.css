@@ -1,0 +1,1135 @@
+/*
+ font-family: 'Saira Condensed',
+ sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  max-width: 1920px;
+}
+
+header {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  max-width: 1920px;
+  background-color: #29a6dc;
+
+}
+
+header img {
+
+  right: 0;
+  bottom: 0;
+  height: 50%;
+
+}
+
+header > * {
+  position: absolute;
+}
+
+header div.welcome {
+  z-index: 1;
+  font-family: 'Saira Condensed ',
+    sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  top: 7%;
+  left: 5%;
+  right: 5%;
+}
+
+div h1 {
+  margin-top: 5vh;
+  font-size: 18px;
+}
+
+div h2 {
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+header button {
+  font-family: 'Saira',
+    sans-serif;
+  margin-top: 3vh;
+  padding: 10px 20px;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+header button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(0, 0, 20);
+}
+
+@media(orientation:portrait) {
+  header img {
+
+    right: -15%;
+    bottom: 0;
+    height: 50%;
+  }
+
+  header div h2 {
+    font-size: 15px;
+    line-height: 4em;
+  }
+
+  header button {
+    margin-top: 30px;
+  }
+}
+
+@media(orientation:portrait) and (min-width: 280px) {
+  header div.welcome {
+    font-size: 35px;
+  }
+
+  header div h1 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+  }
+
+  header div h2 {
+    font-size: 16px;
+    line-height: 16px;
+
+  }
+
+
+  header button {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+
+  header img {
+    right: -15%;
+  }
+}
+
+@media(orientation:portrait) and (min-width: 360px) {
+  header div.welcome {
+    font-size: 45px;
+  }
+
+  header div h1 {
+    margin: 25px 0 20px;
+    font-size: 24px;
+  }
+
+  header div h2 {
+    font-size: 20px;
+    line-height: 20px;
+
+  }
+
+  header button {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  header img {
+    right: -15%;
+  }
+}
+
+@media(orientation:portrait) and (min-width: 375px) {
+  header div.welcome {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+
+  header div h1 {
+    margin: 50px 0 20px;
+    font-size: 24px;
+  }
+
+  header div h2 {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+
+  header button {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  header img {
+    height: 50%;
+    right: -20%;
+  }
+}
+
+@media(orientation:portrait) and (min-width: 768px) {
+  header div.welcome {
+    margin-top: 40px;
+    font-size: 70px;
+  }
+
+  header div h1 {
+    margin: 40px 0 40px;
+    font-size: 36px;
+  }
+
+  header div h2 {
+    font-size: 36px;
+    line-height: 20px;
+
+  }
+
+  header button {
+    margin-top: 80px;
+    font-size: 24px;
+  }
+
+  header img {
+    height: 50%;
+    right: -50px;
+  }
+}
+
+
+@media(orientation:landscape) {
+  header img {
+
+    right: -10%;
+    bottom: 0;
+    height: 90%;
+  }
+
+  header div.welcome {
+
+    top: 15%;
+    left: 7%;
+    right: 48%;
+
+
+  }
+
+  header div h2 {
+    font-size: 15px;
+    line-height: 4em;
+  }
+
+  header button {
+    margin-top: 40px;
+  }
+}
+
+
+@media(orientation:landscape) and (min-width: 640px) {
+
+
+  header div h1 {
+    margin: 25px 0 20px;
+    font-size: 24px;
+  }
+
+  header div h2 {
+    font-size: 20px;
+    line-height: 20px;
+
+  }
+
+  header button {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  header img {
+    height: 95%;
+    right: -50px;
+  }
+
+}
+
+
+@media(orientation:landscape) and (min-width: 1024px) {
+  header div.welcome {
+
+    text-align: left;
+    top: 35%;
+
+    left: 3%;
+
+  }
+
+  header P {
+    font-size: 56px;
+
+  }
+
+  header div h1 {
+    margin: 85px 0 20px;
+    font-size: 34px;
+  }
+
+  header div h2 {
+    font-size: 28px;
+    line-height: 40px;
+
+  }
+
+
+  header img {
+
+    right: -15%;
+    height: 85%;
+  }
+
+  header button {
+    margin-top: 100px;
+    font-size: 24px;
+  }
+
+}
+
+@media(orientation:landscape) and (min-width: 1280px) {
+  header div.welcome {
+
+    text-align: left;
+    top: 35%;
+
+    left: 5%;
+
+  }
+
+  header P {
+    font-size: 100px;
+
+  }
+
+  header div h1 {
+    margin: 85px 0 20px;
+    font-size: 36px;
+  }
+
+  header div h2 {
+    font-size: 36px;
+    line-height: 40px;
+
+  }
+
+
+  header img {
+
+    right: -15%;
+    height: 90%;
+  }
+
+  header button {
+    margin-top: 100px;
+    font-size: 24px;
+  }
+
+}
+
+@media(orientation:landscape) and (min-width: 1600px) {
+  header div.welcome {
+
+    text-align: left;
+    top: 30%;
+
+    left: 7%;
+    right: 20%;
+
+  }
+
+  header P {
+    font-size: 120px;
+
+  }
+
+  header div h1 {
+    margin: 85px 0 20px;
+    font-size: 40px;
+  }
+
+  header div h2 {
+    font-size: 40px;
+    line-height: 50px;
+
+  }
+
+
+  header img {
+
+    right: -15%;
+    height: 95%;
+  }
+
+  header button {
+    margin-top: 150px;
+    font-size: 40px;
+  }
+
+}
+
+
+
+/*Sekcja 1*/
+
+section.features {
+  max-width: 1900px;
+  margin: 50px auto 0;
+  min-height: 100vh;
+  padding: 3%;
+  text-align: center;
+
+}
+
+
+section.features h1 {
+  font-family: 'Saira Condensed',
+    sans-serif;
+  margin: 20px 0 0 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+section div.feature img {
+  width: 100%;
+  max-width: 375px;
+
+
+
+}
+
+section.features h2 {
+  font-family: 'Saira Condensed',
+    sans-serif;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section.features p {
+  font-family: 'Saira',
+    sans-serif;
+  margin: 0 0 50px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@media(min-width:360px) {
+  section.features p {
+    font-size: 14px;
+  }
+
+  section.features h1 {
+    font-size: 32px;
+  }
+}
+
+@media(min-width:768px) {
+  section.features p {
+    font-size: 24px;
+  }
+
+  section.features h1 {
+    font-size: 56px;
+  }
+
+  section.features h2 {
+    font-size: 32px;
+  }
+}
+
+@media(min-width:1280px) {
+  .feature {
+    float: left;
+    width: 33%;
+    padding: 0 15px;
+  }
+
+
+  section.features h1 {
+    margin-bottom: 10%;
+    font-size: 56px;
+
+  }
+
+  section.features h2 {
+    margin: 20% 0 10%;
+    font-size: 28px;
+  }
+
+  section.features p {
+    font-size: 24px;
+
+
+
+  }
+}
+
+@media(min-width:1600px) {
+  .feature {
+    float: left;
+    width: 33%;
+    padding: 3% 20px;
+  }
+
+
+  section.features h1 {
+    font-size: 70px;
+
+  }
+
+  section.features h2 {
+
+    font-size: 30px;
+  }
+
+  section.features p {
+    font-size: 24px;
+    line-height: 140%;
+
+
+  }
+}
+
+/*SEKCJA PORTFOLIO*/
+
+.portfolio {
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+}
+
+section.portfolio h1 {
+  font-family: 'Saira Condensed';
+  padding: 20px;
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+section.portfolio h2 {
+  font-family: 'Saira Condensed';
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px white solid;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1em;
+}
+
+section.portfolio p {
+  padding: 10px 0 0 20px;
+}
+
+.portfolio .projects .project img {
+  display: block;
+  width: 100%;
+}
+
+
+.portfolio .descriptions {
+  color: white;
+  font-family: 'Saira Condensed';
+  font-weight: normal;
+  padding: 20px 20px 20px 0;
+
+}
+
+.portfolio .projects {
+  margin-bottom: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+
+}
+
+.portfolio .projects:nth-of-type(odd) {
+  background-color: orangered;
+  margin-bottom: 30px;
+}
+
+.portfolio .projects:nth-of-type(even) {
+  background-color: dodgerblue;
+  margin-bottom: 30px;
+}
+
+@media(min-width:768px) {
+  section.portfolio h1 {
+    font-size: 56px;
+  }
+
+  section.portfolio h2 {
+    font-size: 34px;
+  }
+
+  section.portfolio p {
+    font-size: 22px;
+  }
+
+  .portfolio .projects {
+    margin-bottom: 40px;
+  }
+}
+
+@media(orientation:landscape) {
+
+  .descriptions,
+  .project {
+    width: 50%;
+    float: left;
+  }
+
+  .portfolio .projects:nth-of-type(even) .project {
+    float: right;
+  }
+
+  .portfolio .project img {
+    display: block;
+
+  }
+
+  .portfolio :nth-of-type(even) .descriptions {
+    padding: 20px 0 20px 20px;
+  }
+
+  .portfolio :nth-of-type(even) .descriptions h2 {
+    padding-left: 0;
+  }
+
+  .portfolio :nth-of-type(even) .descriptions p {
+    padding-left: 0;
+  }
+}
+
+@media(orientation:landscape) and (min-width:1400px) {
+  section.portfolio h1 {
+    font-size: 60px;
+  }
+
+  section.portfolio h2 {
+    font-size: 34px;
+  }
+
+  section.portfolio p {
+    font-size: 24px;
+  }
+
+  .portfolio .projects {
+    margin-bottom: 50px;
+
+  }
+
+}
+
+/*sekcja About*/
+
+
+.about {
+  font-family: 'Saira Condensed',
+    sans-serif;
+}
+
+.about .motto {
+  background-image: url(images/motto.jpg);
+  max-width: 100%;
+  float: left;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.about .motto .bg {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.about .feature img {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.about .motto h1 {
+  position: absolute;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.about .motto > * p {
+  position: absolute;
+  float: left;
+  text-align: center;
+
+
+}
+
+
+
+@media(min-width:320px) {
+  .about .motto h1 {
+    width: 100%;
+    margin-top: 20%;
+    padding: 10px;
+    color: white;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .about .motto p:nth-of-type(odd) {
+    margin-top: 60%;
+    max-width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+
+  }
+
+  .about .motto p:nth-of-type(even) {
+    max-width: 100%;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    top: 70vh;
+    color: white;
+    font-size: 16x;
+    text-align: center;
+  }
+
+
+
+
+
+}
+
+@media(min-width:360px) {
+
+
+  .about .motto h1 {
+    font-size: 36px;
+  }
+
+  .about .motto p:nth-of-type(odd) {
+    font-size: 24px;
+  }
+
+  .about .motto p:nth-of-type(even) {
+    font-size: 20px;
+  }
+
+
+
+
+
+}
+
+@media(min-width:768px) {
+  .about .motto h1 {
+    font-size: 60px;
+  }
+
+  .about .motto p:nth-of-type(odd) {
+    font-size: 34px;
+    top: 0;
+  }
+
+  .about .motto p:nth-of-type(even) {
+    font-size: 28px;
+    top: 70%;
+  }
+
+  .about h1 {
+    font-size: 44px;
+  }
+}
+
+@media(min-width:1024px) {
+  .about .motto h1 {
+    font-size: 70px;
+  }
+
+  .about .motto p:nth-of-type(odd) {
+    font-size: 44px;
+    top: 0;
+  }
+
+  .about .motto p:nth-of-type(even) {
+    font-size: 38px;
+    top: 70%;
+  }
+
+
+}
+
+@media(orientation:landscape) and (min-width:533px) {
+  .about .motto h1 {
+    font-size: 34px;
+    bottom: 70vh;
+  }
+
+  .about .motto p:nth-of-type(odd) {
+    font-size: 22px;
+    bottom: 40vh;
+    padding: 0 40px;
+  }
+
+  .about .motto p:nth-of-type(even) {
+    font-size: 18px;
+    top: 70%;
+  }
+
+
+}
+
+@media(orientation:landscape) and (min-width:812px) {
+  .about .motto h1 {
+    font-size: 36px;
+    bottom: 70vh;
+  }
+
+  .about .motto p:nth-of-type(odd) {
+    font-size: 26px;
+    top: -82%;
+  }
+
+  .about .motto p:nth-of-type(even) {
+    font-size: 20px;
+    top: 70%;
+  }
+
+
+}
+
+
+@media(orientation:landscape) and (min-width:1024px) {
+  .about .motto h1 {
+    font-size: 70px;
+    bottom: 70vh;
+  }
+
+  .about .motto p:nth-of-type(odd) {
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    line-height: 100px;
+    font-size: 26px;
+
+  }
+
+  .about .motto p:nth-of-type(even) {
+    font-size: 30px;
+    top: 70%;
+  }
+}
+
+
+/*SEKCJA HOBBY*/
+
+
+
+
+.hobby .item {
+  height: 25vh;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
+.hobby h1 {
+  padding: 20px;
+  font-size: 24px;
+  font-family: 'Saira Condensed',
+    sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.hobby .item p {
+  font-family: 'Saira Condensed',
+    sans-serif;
+  font-size: 20px;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 4px black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hobby .item:nth-of-type(1) {
+  background-image: url("images/hobby1.jpg");
+}
+
+.hobby .item:nth-of-type(2) {
+  background-image: url(images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+  background-image: url(images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+  background-image: url(images/hobby4.jpg);
+}
+
+
+@media(min-width:533px) {
+  .hobby .item {
+    float: left;
+    width: 50%;
+    height: 40vh;
+  }
+
+}
+
+@media(min-width:768px) {
+  .hobby h1 {
+    font-size: 60px;
+  }
+
+  .hobby .item p {
+    font-size: 44px;
+    ;
+  }
+
+}
+
+@media(min-width:1024px) {
+  .hobby .item p {
+    padding: 0;
+    line-height: 40vh;
+    opacity: 0;
+    transition: 1s;
+    cursor: default;
+  }
+
+  .hobby .item p:hover {
+    opacity: 1;
+  }
+
+  .hobby .item {
+    background-size: 120%;
+    transition: 1s;
+  }
+
+  .hobby .item:hover {
+    background-size: 150%;
+  }
+}
+
+@media(min-width:1600px) {
+  .hobby h1 {
+    font-size: 70px;
+
+  }
+
+  .hobby .item p {
+    font-size: 54px;
+  }
+}
+
+/*?SEKCJA KONTAKT*/
+
+.contact {
+  padding-top: 30px;
+  background-color: #000;
+}
+
+.contact h1 {
+  font-family: 'Saira Condensed',
+    sans-serif;
+
+  padding: 10px 10px 30px;
+  font-size: 32px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact .wrap {
+  padding: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+  width: 80%;
+  margin: 0 10% 30px 10%;
+  font-family: 'Saira Condensed',
+    sans-serif;
+  font-size: 12px;
+}
+
+.contact input {
+
+  height: 36px;
+  padding: 5px;
+}
+
+.contact textarea {
+  height: 20vh;
+
+  padding: 5px;
+}
+
+.contact button {
+  font-family: 'Saira Condensed',
+    sans-serif;
+  margin-bottom: 40px;
+  font-size: 14px;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.contact .social {
+  padding: 10px;
+
+}
+
+.contact .socials {
+  font-size: 0;
+}
+
+.socials .social img {
+  float: left;
+  width: 36px;
+  margin: 0 5% 0 15%;
+  /*  padding: 10px 0 0 0;*/
+}
+
+.socials .social span {
+
+  float: left;
+  font-family: 'Saira Condensed',
+    sans-serif;
+  font-size: 14px;
+  color: lightgrey;
+  text-align: center;
+  line-height: 36px;
+}
+
+@media(min-width:533px) {
+  .contact .social {
+    display: inline-block;
+    width: 50%;
+    padding-left: 7%;
+  }
+}
+
+@media(min-width:1024px) {
+
+  .contact form,
+  .contact .socials {
+    float: left;
+    width: 50%;
+  }
+
+  .contact .social {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact h1 {
+    font-size: 44px;
+  }
+
+  .contact input {
+    font-size: 24px;
+    height: 46px;
+    padding: 10px;
+  }
+
+  .contact textarea {
+    font-size: 24px;
+
+  }
+
+  .contact button {
+
+    font-size: 24px;
+    height: 60px;
+    letter-spacing: 3px;
+  }
+
+  .socials .social {
+    width: 100%;
+  }
+
+  .socials .social img {
+    width: 56px;
+    margin: 0 5% 0 15%;
+    /*  padding: 10px 0 0 0;*/
+  }
+
+  .socials .social span {
+
+    font-size: 24px;
+    line-height: 56px;
+  }
+}
+
+/*FOOTER*/
+
+footer {
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  background-color: #29a9df;
+  text-align: center;
+
+}
